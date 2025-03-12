@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Transport Service</title>
+  </head>
+  <body>
+    <header class="bar">
+      <a href="#"><img src="images/logo.png" alt="logo" /></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#aboutUs">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </header>
+    <div class="banar">
+        <h1>Moving Your Goods Safely</h1>
+        <h3>Using Airlines, Trains, Trucks, and Ships.</h3>
+        <a href="#">
+            Learn more
+            <span class="arrow"></span>
+        </a>
+    </div>
+    <div class="transpotServices" id="services">
+        <h2>Transport Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa rem 
+            distinctio necessitatibus sapiente accusantium? Sint eaque ipsam tenetur culpa voluptas.
+        </p>
+        <div class="firstRowImage">
+            <div class="vans">
+                <img src="images/service1.jpg" alt="vans">
+                <h3>Goods Delivery Using Vans</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Odio iusto non corrupti voluptatibus libero eligendi.
+                </p>
+            </div>
+            <div class="truck">
+                <img src="images/service2.jpg" alt="truck">
+                <h3>Goods Delivery Using Trucks</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Odio iusto non corrupti voluptatibus libero eligendi.
+                </p>
+            </div>
+            <div class="ships">
+                <img src="images/service3.jpg" alt="ships">
+                <h3>Goods Delivery Using Ships</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Odio iusto non corrupti voluptatibus libero eligendi.
+                </p>
+            </div>
+        </div>
+        <div class="secondRowImage">
+            <div class="plane">
+                <img src="images/service4.jpg" alt="vans">
+                <h3>Goods Delivery Using Planes</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Odio iusto non corrupti voluptatibus libero eligendi.
+                </p>
+            </div>
+            <div class="train">
+                <img src="images/service5.jpg" alt="truck">
+                <h3>Goods Delivery Using Trains</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur 
+                    adipisicing elit. Odio iusto non corrupti voluptatibus libero eligendi.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="aboutUs">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa rem 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa rem 
+            distinctio necessitatibus sapiente accusantium? Sint eaque ipsam tenetur culpa voluptas.
+        </p>
+        <video src="images/transportvideo.mp4" loop type="video/mp4"></video>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa rem 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa rem 
+            distinctio necessitatibus sapiente accusantium? Sint eaque ipsam tenetur culpa voluptas.
+        </p>
+    </div>
+    <div class="contact" id="Contact">
+        <h2>Let's Talk</h2>
+        <h5>Use Below Form or Email me direct: 
+            <a href="mailto:#">contact@yourwebsite.com</a>
+        </h5>
+        <form class="flf df_c_v jcsb" id="contactform" method="post" action="form/form.php">
+            <input type="text" name="name" placeholder="Name*" required="">
+            <input type="email" name="email" placeholder="Email*" required="">
+            <input type="text" name="subject" placeholder="Subject*" required="">
+            <textarea name="message" placeholder="Message..."></textarea>
+            <button id="submit" type="submit" name="submit">
+                Submit Message &nbsp; <span class="fa-solid fa-angle-right"></span>
+            </button>
+        </form>
+    </div>
+    
+    <footer class="flf">
+        <div class="container">
+            <div class="copyright">
+                Copyright &copy; <span id="footeryear"></span> <a href="#">Transport</a>
+            </div>
+            <div class="social df_c_v">
+                Follow
+                <a href="#"><span class="fa-brands fa-facebook"></span></a>
+                <a href="#"><span class="fa-brands fa-twitter"></span></a>
+                <a href="#"><span class="fa-brands fa-instagram"></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+      document.addEventListener("scroll", function () {
+        const header = document.querySelector(".bar");
+        if (window.scrollY > 80) {
+          header.style.backgroundColor = "dodgerblue"; // Change to white
+          header.style.top = "0";
+        } else {
+          header.style.backgroundColor = "transparent"; // Reset to transparent
+          header.style.top = "10px";
+        }
+      });
+    </script>
+  </body>
+</html>

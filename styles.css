@@ -1,0 +1,297 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'); /* Include Font Awesome */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header { 
+    display: flex;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    transition: top 0.2s ease-out;
+    left: auto;
+    z-index: 1000;
+}
+
+header img { 
+    width: 320px;
+    height: auto;
+    margin-top: 3px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+header li {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.banar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 950px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.02)), 
+                url(images/pic1.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+
+h1 {
+    width: 40%;
+    margin-top: 150px;
+    margin-left: 200px;
+    font-size: 5vw;
+    color: white;
+}
+
+.banar h3 {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 200px;
+    font-size: 3vw;
+    color: white;
+}
+
+.banar a {
+    width: 15%;
+    padding: 1.3vw 3vw;
+    margin-left: 200px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+.banar span::before {
+    margin-left: 10px;
+    content: '\f105'; /* Unicode for the icon */
+    font-family: 'Font Awesome 5 Free'; /* Set the font family to Font Awesome */
+    font-weight: 900; /* Set the correct weight for icons, this is important */
+}
+
+.banar a:hover {
+    background-color: white;
+}
+
+.transpotServices {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.transpotServices h2 {
+    text-align: center;
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 1vw;
+}
+
+.transpotServices p {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.firstRowImage, .secondRowImage {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.firstRowImage > div, .secondRowImage > div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 32%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.firstRowImage > div:hover, .secondRowImage > div:hover {
+    transform: translateY(-10px);
+}
+
+.firstRowImage img, .secondRowImage img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.firstRowImage h3, .secondRowImage h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.firstRowImage p, .secondRowImage p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.about {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.about h2 {
+    text-align: center;
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 1vw;
+}
+
+.about p {
+    width: 70%;
+    font-size: 20px;
+}
+
+video {
+    margin: 0;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.contact {
+    margin: 0;
+    padding: 30px;
+    width: 100%;
+    height: 650px;
+    background-color: yellow;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #000;
+    font-size: 4.3vw;
+    margin-bottom: 1vw;
+}
+
+.contact h5 {
+    text-align: center;
+    color: #000;
+    font-size: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.contact h5 a {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.contact form{
+    margin-top: 2vw;
+}
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea{
+    float: left;
+    width: 30%;
+    height: 4.5vw;
+    background: #fff;
+    border: none;
+    padding: 0 30px 0 30px;
+    border-radius:0; -webkit-border-radius:0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+}
+
+.contact form textarea {
+    width: 96% !important;
+}
+
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form textarea:focus{
+    outline: 2px solid #2175f3;
+}
+.contact form textarea{
+    width: 100%;
+    height: 10vw;
+    padding: 1.5vw;
+}
+.contact form button{
+    float: left;
+    width: auto;
+    height: 6vw;
+    cursor: pointer;
+    background: #000;
+    text-align:center;
+    color:#fff;
+    font-size:1.2vw;
+    font-family: 'Manrope', sans-serif;
+    padding: 0 3vw;
+    margin-left: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding:2vw 0;
+    width: calc(200% / 2);
+    text-align: center;
+}
+footer .copyright{
+    color:#000;
+    font-size:1.3vw;
+    margin-bottom: 12px;
+}
+footer .copyright a{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+footer .copyright span.company{
+    font-size: 1vw;
+}
+footer .copyright span.company a{
+    border-bottom: none;
+}
+footer .social{
+    color:#000;
+    font-size:1.3vw;
+}
+footer .social a{
+    color: #000;
+}
